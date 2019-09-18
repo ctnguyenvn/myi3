@@ -10,4 +10,4 @@ my i3 window manager config files
 
 # ScreenShot
 my config screenshot
-[! screen shot 1](./screenshots/screenshot1.jpg)
+![screen shot 1](./screenshots/screenshot1.jpg)
