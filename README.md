@@ -8,7 +8,7 @@ my i3 window manager config files
 * Awesome Font
 * NetworkManager-applet
 * i3-gaps
-
+* playerctl
 
 ## TODO list
 - [x] add gaps settings
