@@ -1,5 +1,5 @@
-# myi3
-my i3 window manager config files
+# Myi3
+my i3 window manager config file
 
 
 ## Dependencies
@@ -9,6 +9,10 @@ my i3 window manager config files
 * NetworkManager-applet
 * i3-gaps
 * playerctl
+
+## My i3-status config
+my i3-status bar config file
+[click for see](https://github.com/dr-cyb3r/my-i3status)
 
 ## TODO list
 - [x] add gaps settings
