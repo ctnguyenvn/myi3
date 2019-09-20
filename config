@@ -131,7 +131,7 @@ bindsym $mod+Shift+e exec "i3-nagbar -t warning -m "Do you want to exit i3?" -B 
 # ------------SCREEN SHOTER-------------
 # --------------------------------------
 bindsym --release Print exec scrot $HOME/Pictures/screenshot-$(date +%Y-%m-%d%H-%M).jpg
-bindsym --release Shift+Print exec scrot -s $HOME/Pictures/screenshot-$(date +%Y-%m-%d%H-%M.jpg)
+bindsym --release Shift+Print exec scrot -u $HOME/Pictures/screenshot-$(date +%Y-%m-%d%H-%M.jpg)
 # --------------------------------------
 # ----------KEYBOARD LAYOUT-------------
 # --------------------------------------
