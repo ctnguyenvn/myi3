@@ -21,13 +21,14 @@ new_float normal 2
 # --------------------------------------
 ## change border
 bindsym $mod+u border none
+bindsym $mod+Shift+n border normal 0
 bindsym $mod+y border pixel 2
 bindsym $mod+n border normal 2
 ## color border
 ### class		border  backgr. text	indicator child_border
-client.focused		#3D9396 #3D9396 #3D9396 #00C0FF   #3D9396
-client.focused_inactive #314242 #314242 #314242 #314242   #314242
-client.unfocused	#314242 #314242 #314242 #314242   #314242
+client.focused		#919191 #919191 #1A1A1A #00C0FF   #919191
+client.focused_inactive #314242 #314242 #000000 #314242   #314242
+client.unfocused	#314242 #314242 #E6E6FA #314242   #314242
 client.urgent		#314242 #314242 #314242 #314242   #314242
 client.placeholder	#000000 #0C0C0C #FFFFFF #000000   #0C0C0C
 client.background	#ffffff 
@@ -126,12 +127,12 @@ bindsym $mod+Shift+r restart
 # ------------EXIT SETTINGS-------------
 # --------------------------------------
 # exit i3 (logs you out of your X session)
-bindsym $mod+Shift+e exec "i3-nagbar -t warning -m "Do you want to exit i3?" -B "Yes, exit i3" "i3-msg exit""
+bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'Do you want to exit i3?' -B 'Yes, exit i3' 'i3-msg exit'"
 # --------------------------------------
 # ------------SCREEN SHOTER-------------
 # --------------------------------------
-bindsym --release Print exec scrot $HOME/Pictures/screenshot-$(date +%Y-%m-%d%H-%M).jpg
-bindsym --release Shift+Print exec scrot -u $HOME/Pictures/screenshot-$(date +%Y-%m-%d%H-%M.jpg)
+bindsym --release Print exec scrot $HOME/Pictures/screenshot-$(date +%Y-%m-%d%H-%M).jpg -q 100
+bindsym --release Shift+Print exec scrot -q 100 -u $HOME/Pictures/screenshot-$(date +%Y-%m-%d%H-%M.jpg)
 # --------------------------------------
 # ----------KEYBOARD LAYOUT-------------
 # --------------------------------------
@@ -140,9 +141,19 @@ exec_always setxkbmap -layout us,ir -option "grp:alt_shift_toggle"
 # --------------------------------------
 # ------------SOUND SETTINGS------------
 # --------------------------------------
-bindsym XF86AudioRaiseVolume exec amixer -q set Master 2dB+ unmute
-bindsym XF86AudioLowerVolume exec amixer -q set Master 2dB- unmute
-bindsym XF86AudioMute exec amixer -q set Master toggle
+## bindsym XF86AudioRaiseVolume exec amixer -q set Master 2dB+ unmute
+## bindsym XF86AudioLowerVolume exec amixer -q set Master 2dB- unmute
+## bindsym XF86AudioMute exec amixer -q set Master toggle
+
+# Pulse Audio controls
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl -- set-sink-volume 0 +1% #increase sound volume
+bindsym XF86AudioLowerVolume exec --no-startup-id pactl -- set-sink-volume 0 -1% #decrease sound volume
+bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle # mute sound
+# --------------------------------------
+# ---------SCREEN BRIGHTNESS-------------
+# --------------------------------------
+## bindsym XF86MonBrightnessUp exec xbacklight -inc 20 # increase screen brightness
+## bindsym XF86MonBrightnessDown exec xbacklight -dec 20 # decrease screen brightness
 # --------------------------------------
 # ------------STARTUP APPS--------------
 # --------------------------------------
@@ -157,7 +168,7 @@ bindsym $mod+f fullscreen toggle
 # --------------------------------------
 # -----------SET BACKGROUND-------------
 # --------------------------------------
-exec_always --no-startup-id feh --bg-fill ~/Pictures/wallpapers/Wallpaper.png
+exec_always --no-startup-id feh --bg-fill ~/Pictures/Wallpapers/Wallpaper.png
 # --------------------------------------
 # ---------------RUN ROFI---------------
 # --------------------------------------
@@ -301,6 +312,7 @@ mode "$mode_gaps_outer" {
         bindsym plus  gaps outer current plus 5
         bindsym minus gaps outer current minus 5
         bindsym 0     gaps outer current set 0
+
 
         bindsym Shift+plus  gaps outer all plus 5
         bindsym Shift+minus gaps outer all minus 5

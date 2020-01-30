@@ -18,7 +18,7 @@ my i3-status bar config file
 - [x] add gaps settings
 - [x] change colors
 - [x] re write and debug
-- [ ] add more comments
+- [x] add more comments
 - [ ] optimization for cpu and memory
 - [x] add screenshot dir
 
