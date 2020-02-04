@@ -14,22 +14,22 @@ set $alt Mod1
 # --------------------------------------
 # --------NEW BORDER SETTINGS-----------
 # --------------------------------------
-new_window pixel 2
-new_float normal 2
+new_window pixel 1
+new_float normal 1
 # --------------------------------------
 # -----------BORDER SETTINGS------------
 # --------------------------------------
 ## change border
 bindsym $mod+u border none
 bindsym $mod+Shift+n border normal 0
-bindsym $mod+y border pixel 2
-bindsym $mod+n border normal 2
+bindsym $mod+y border pixel 1
+bindsym $mod+n border normal 1
 ## color border
 ### class		border  backgr. text	indicator child_border
-client.focused		#919191 #919191 #1A1A1A #00C0FF   #919191
-client.focused_inactive #314242 #314242 #000000 #314242   #314242
-client.unfocused	#314242 #314242 #E6E6FA #314242   #314242
-client.urgent		#314242 #314242 #314242 #314242   #314242
+client.focused		#253333 #82C1D6 #1A1A1A #00C0FF   #253333
+client.focused_inactive #253333 #314242 #E6E6FA #314242   #253333
+client.unfocused	#253333 #314242 #E6E6FA #314242   #00000
+client.urgent		#253333 #314242 #314242 #314242   #314242
 client.placeholder	#000000 #0C0C0C #FFFFFF #000000   #0C0C0C
 client.background	#ffffff 
 # --------------------------------------
@@ -258,7 +258,7 @@ bar {
         colors {
                 statusline #ffffff
                 background #040d11
-                separator #ffeb0
+                separator #00FFEC
                 focused_workspace  #cccfd1 #cccfd1 #000000 
                 inactive_workspace #040d11 #040d11 #cccfd1
                 binding_mode       #2d61d3 #2d61d3 #ffffff 
