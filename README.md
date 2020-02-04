@@ -9,10 +9,11 @@ my i3 window manager config file
 * NetworkManager-applet
 * i3-gaps
 * playerctl
+* Pulseaudio
 
 ## My i3-status config
 my i3-status bar config file
-[click for see](https://github.com/dr-cyb3r/my-i3status)
+[click for see](https://github.com/kevinscruff/my-i3status)
 
 ## TODO list
 - [x] add gaps settings
@@ -21,6 +22,12 @@ my i3-status bar config file
 - [x] add more comments
 - [ ] optimization for cpu and memory
 - [x] add screenshot dir
+- [ ] add new screenshot
+- [ ] create package for dependencies
+- [ ] add installer
+- [ ] change i3-status config
+- [ ] display keyboard language
+- [ ] create web guide page
 
 ## ScreenShot
 my config screenshot
