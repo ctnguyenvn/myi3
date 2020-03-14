@@ -20,14 +20,13 @@ my i3-status bar config file
 - [x] change colors
 - [x] re write and debug
 - [x] add more comments
-- [ ] optimization for cpu and memory
+- [x] optimization for cpu and memory
 - [x] add screenshot dir
-- [ ] add new screenshot
+- [x] add new screenshot
 - [ ] create package for dependencies
 - [ ] add installer
-- [ ] change i3-status config
+- [x] change i3-status config
 - [ ] display keyboard language
-- [ ] create web guide page
 
 ## ScreenShot
 my config screenshot
