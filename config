@@ -26,10 +26,10 @@ bindsym $mod+y border pixel 1
 bindsym $mod+n border normal 1
 ## color border
 ### class		border  backgr. text	indicator child_border
-client.focused		#253333 #82C1D6 #1A1A1A #00C0FF   #253333
-client.focused_inactive #253333 #314242 #E6E6FA #314242   #253333
-client.unfocused	#253333 #314242 #E6E6FA #314242   #00000
-client.urgent		#253333 #314242 #314242 #314242   #314242
+client.focused		#1d1d1d #9090b2 #1A1A1A #00C0FF   #253333
+client.focused_inactive #1d1d1d #161720 #E6E6FA #314242   #253333
+client.unfocused	#1d1d1d #161720 #E6E6FA #314242   #00000
+client.urgent		#4d3a51 #4d3a51 #E6E6FA #314242   #314242
 client.placeholder	#000000 #0C0C0C #FFFFFF #000000   #0C0C0C
 client.background	#ffffff 
 # --------------------------------------
@@ -146,9 +146,9 @@ exec_always setxkbmap -layout us,ir -option "grp:alt_shift_toggle"
 ## bindsym XF86AudioMute exec amixer -q set Master toggle
 
 # Pulse Audio controls
-bindsym XF86AudioRaiseVolume exec --no-startup-id pactl -- set-sink-volume 0 +1% #increase sound volume
-bindsym XF86AudioLowerVolume exec --no-startup-id pactl -- set-sink-volume 0 -1% #decrease sound volume
-bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle # mute sound
+bindsym Shift+F8 exec --no-startup-id pactl -- set-sink-volume 0 +1% #increase sound volume
+bindsym Shift+F7 exec --no-startup-id pactl -- set-sink-volume 0 -1% #decrease sound volume
+bindsym Ctrl+Shift+F7 exec --no-startup-id pactl set-sink-mute 0 toggle # mute sound
 # --------------------------------------
 # ---------SCREEN BRIGHTNESS-------------
 # --------------------------------------
@@ -179,7 +179,7 @@ bindsym $mod+d exec "rofi -show drun"
 bindsym $mod+Shift+x mode "$mode_system"
 set $mode_system (l)ock, (e)xit, switch_(u)ser, (s)uspend, (h)ibernate, (r)eboot, (Ctrl+s)leep, (Shift+s)hutdown
 mode "$mode_system" {
-    bindsym l exec --no-startup-id "i3lock -c '#000000'", mode "default"
+    bindsym l exec --no-startup-id "i3lock -i '/home/kevin/Pictures/Wallpapers/Wallpaper.png'", mode "default"
     bindsym s exec --no-startup-id "systemctl suspend", mode "default"
     bindsym u exec --no-startup-id "systemctl switch_user", mode "default"
     bindsym e exec --no-startup-id "systemctl logout", mode "default"
@@ -256,13 +256,13 @@ bar {
         status_command i3status
         separator_symbol ""
         colors {
-                statusline #ffffff
-                background #040d11
-                separator #00FFEC
-                focused_workspace  #cccfd1 #cccfd1 #000000 
-                inactive_workspace #040d11 #040d11 #cccfd1
-                binding_mode       #2d61d3 #2d61d3 #ffffff 
-                urgent_workspace   #2d61d3 #2d61d3 #ffffff
+                statusline #e2fff7
+                background #0b0c10
+                separator #636dc8
+                focused_workspace  #9090b2 #9090b2 #000000 
+                inactive_workspace #0b0c10 #0b0c10 #cccfd1
+                binding_mode       #4d3a51 #4d3a51 #ffffff 
+                urgent_workspace   #4d3a51 #4d3a51 #ffffff
 }
         font pango:Source Code Pro for Powerline, FontAwesome Regular, Icons 9
 }
