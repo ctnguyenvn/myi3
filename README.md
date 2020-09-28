@@ -30,4 +30,5 @@ my i3-status bar config file
 
 ## ScreenShot
 my config screenshot
-![screen shot 1](./screenshots/screenshot1.jpg)
+![screen shot (purple config)](./screenshots/screenshot-purple.jpg)
+![screen shot (browny config)](./screenshots/screenshot-browny.jpg)
