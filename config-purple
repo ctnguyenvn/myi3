@@ -1,7 +1,12 @@
+<<<<<<< HEAD:config-purple
 # -----------Folow Me------------
 # My Github: github.com/KevinScruff
 # -------------------------------
 exec_always /usr/lib/notification-daemon-1.0/notification-daemon
+=======
+
+# My Github: github.com/KevinScruff
+>>>>>>> 8f0e523e2e07f0596b4e57e2e220d8b1bfa18b12:config
 
 # --------------------------------------
 # ------------SET MOD KEY---------------
